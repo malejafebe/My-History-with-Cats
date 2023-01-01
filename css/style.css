@@ -1,0 +1,82 @@
+header {
+  background-color: black;
+  display: grid;
+  place-items: center;
+  grid-area: navigation;
+}
+header .nav-bar {
+  color: white;
+  font-style: italic;
+  font-size: 20px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-rows: 50px 1fr;
+  grid-template-areas: "navigation" "container";
+  height: 100vh;
+}
+body .container {
+  grid-area: container;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas: "content sidebar";
+  margin: 20px;
+}
+body .content {
+  grid-area: content;
+  font-size: 16px;
+  color: black;
+  text-align: justify;
+  border: groove 5px violet;
+  margin: 0 10px;
+}
+body .content .article-img {
+  display: grid;
+  place-items: center;
+}
+body .content img {
+  width: 60%;
+  padding: 50px 0 20px;
+}
+body .content .article-txt {
+  padding: 10px 20px;
+  display: grid;
+  place-items: center;
+}
+body .content h1 {
+  padding: 10px;
+}
+body .side-bar {
+  grid-area: sidebar;
+  border: groove 5px violet;
+  margin: 0 10px;
+}
+body .side-bar .side-img {
+  display: grid;
+  place-items: center;
+}
+body .side-bar .content-table {
+  display: grid;
+  place-items: center;
+}
+body .side-bar .list {
+  list-style: none;
+  padding: 10px;
+}
+body .side-bar .list a {
+  color: blueviolet;
+  text-decoration: none;
+}
+body .side-bar img {
+  width: 75%;
+  padding: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
